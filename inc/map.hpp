@@ -14,8 +14,8 @@ private:
     int **map; // Pointer to a pointer for dynamic 2D array
     int rows;
     int cols;
-    int foodX = 0;
-    int foodY = 0;
+    int foodX;
+    int foodY;
 };
 
 #endif // MAP_H

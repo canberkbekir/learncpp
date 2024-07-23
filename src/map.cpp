@@ -17,6 +17,8 @@ void Map::initMap(int rows, int cols)
 {
     this->rows = rows;
     this->cols = cols;
+    this->foodX = 0;
+    this->foodY = 0;
 
     // Allocate memory for the 2D array
     map = new int *[rows];
@@ -49,7 +51,6 @@ void Map::printMap()
 
 void Map::addFood()
 {
-    // clear the food from the map
     map[foodX][foodY] = 0;
 
     // Add food to a random location on the map
